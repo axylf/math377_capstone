@@ -29,7 +29,7 @@ Feel free to rename the folder and customize the project structure to best fit y
 
 ------------------------------------------------------------------------------
 
-## Project Title
+## Optimization of Wheel of Fortune Bonus Round
 =========================
 
 ### Executive Summary
