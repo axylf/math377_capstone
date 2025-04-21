@@ -84,8 +84,13 @@
 
 #### Dataset
 
-... Google Drive links to datasets and pickled models
+TBA
 
 ### Credits & References
 
-... Include any personal learning
+https://www.kaggle.com/code/chrisloop89/english-words-and-letters-frequency
+
+https://saturncloud.io/blog/how-to-iterate-through-specific-columns-and-rows-in-pandas-dataframe-to-perform-a-check/
+
+Dataset Source:
+https://buyavowel.boards.net/page/compendium
