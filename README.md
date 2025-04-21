@@ -53,11 +53,13 @@ Feel free to rename the folder and customize the project structure to best fit y
 
 ### Proposed Solution
 
-    We intend to build a regression model using SciKit Learn to find which letters should be guessed in different puzzles, and find a general case guess based on what works for each word. We will evaluate whether linear or logistic works better.
+* We intend to build a regression model using SciKit Learn to find which letters should be guessed in different puzzles, and find a general case guess based on what works for each word. We will evaluate whether linear or logistic works better.
 
-    We proxied earlier based on frequencies that G, H, D, A are the best combination in terms of frequency, but we want to take into account the individual words that make up each puzzle. 
+* We proxied earlier based on frequencies that G, H, D, A are the best combination in terms of frequency, but we want to take into account the individual words that make up each puzzle. 
 
 ### Data Dictionary
+
+* For the *Wheel* dataset:
 
 | Variable | Type | Description |
 | -------- | ------- | --------- |
@@ -65,6 +67,13 @@ Feel free to rename the folder and customize the project structure to best fit y
 | Category | String | The category to which a puzzle belongs. 
 | Date    | String/Date Object if possible to convert | The date that an episode aired.
 
+
+* For the Word Frequency dataset:
+
+| Variable | Type | Description |
+| -------- | ------- | --------- |
+| Word  | String | A word that is found in an online corpus of English text.
+| Count | Integer | The frequency of a word. 
 
 ### Organization
 
