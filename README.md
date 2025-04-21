@@ -32,26 +32,38 @@ Feel free to rename the folder and customize the project structure to best fit y
 ## Optimization of Wheel of Fortune Bonus Round
 =========================
 
-### Executive Summary
+### Project Overview
 
-... Define the problem
-... What is the data science opportunity
-... Key takeaways
+### Problem Area
 
-### Demo
+ In the final bonus round of the game show *Wheel of Fortune*, a contestant has to pick a category and solve a Hangman-esque puzzle. The letters R, S, T, L, N, and E are all chosen already, and the contestant has to pick between three additional consonants and one vowel, and then solve the puzzle. For this project, we will look for the best letter combination in general case scenarios and across different categories. We also intend to build a regression model that provides the best combination to maximize the letters in a given puzzle also based on the preexisting placement of the letters R, S, T, L, N, and E.
 
-... Show your work:
-...     Data visualizations
-...     Interactive demo (e.g., `streamlit` app)
-...     Short video of users trying out the solution
+ Key takeaways include:
+ * Prediction of what letters are most frequent
+ * Prediction of what letters are best in certain contexts
+ * Maximizing the number of letters that are covered on the board.
 
+### Affected People
+* Those who decide to enter *Wheel*. 
+* People at home or school playing *Wheel*-like games.
+* The production companies behind *Wheel*, as they can tailor the show to make easier or more difficult puzzles based on these metrics.
 
-### Methodology
+### Impact
+* By finding the optimal combination of letters by category and in a general case scenario, a skilled contestant who applies these findings is closer to winning tens of thousands of dollars per contestant.
 
-... High-level diagrams of entire process:
-...     various data processing steps
-...     various modelling directions
-...     various prototyping directions
+### Proposed Solution
+
+    We intend to build a regression model using SciKit Learn to find which letters should be guessed in different puzzles, and find a general case guess based on what works for each word. We will evaluate whether linear or logistic works better.
+
+    We proxied earlier based on frequencies that G, H, D, A are the best combination in terms of frequency, but we want to take into account the individual words that make up each puzzle. 
+
+### Data Dictionary
+
+| Variable | Type | Description |
+| -------- | ------- | --------- |
+| Puzzle  | String    | An individual puzzle from an episode.
+| Category | String | The category to which a puzzle belongs. 
+| Date    | String/Date Object if possible to convert | The date that an episode aired.
 
 
 ### Organization
