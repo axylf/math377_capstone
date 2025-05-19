@@ -1,4 +1,5 @@
 ## Optimization of Wheel of Fortune Bonus Round
+*Axyl Fredrick* | *Math 37700* | *Spring 2025*
 =========================
 
 ### Project Overview
@@ -46,6 +47,87 @@
 
 ### Organization
 
+## Notebooks  
+| Path | Purpose |
+|------|---------|
+| `notebooks/1_data_prep.ipynb` | Data ingestion, cleaning, and saving processed files |
+| `notebooks/2_eda.ipynb` | Visual and statistical exploration of cleaned data |
+| `notebooks/3_pre-processing.ipynb` | Preprocessing and testing with basic models |
+| `notebooks/4_modeling.ipynb` | Advanced modeling, optimization, and final evaluation |
+
+---
+
+## Installation & Setup (OPTIONAL)
+1. **Clone the repo**  
+    git clone https://github.com/YourUsername/CapstoneProject.git  
+    cd CapstoneProject  
+
+2. **Create environment & install dependencies**  
+    python3 -m venv .venv  
+    source .venv/bin/activate   # macOS / Linux  
+    .venv\Scripts\activate      # Windows  
+    pip install -r requirements.txt  
+
+3. **Directory permissions**  
+    Ensure `data/` and `outputs/` are writable.
+
+---
+
+## Project Structure  
+    CapstoneProject/
+    ├── README.md
+    ├── .gitignore
+    ├── requirements.txt
+    │
+    ├── data/
+    │   ├── raw/                # Immutable source data
+    │   └── processed/          # Cleaned, feature‑engineered data
+    │
+    ├── notebooks/              # Jupyter notebooks
+    │   ├── 1_data_prep.ipynb
+    │   ├── 2_eda.ipynb
+    │   ├── 3_baseline_models.ipynb
+    │   └── 4_final_modeling.ipynb
+    │
+    ├── src/ (OPTIONAL)         #  Reusable Python modules
+    │   ├── __init__.py
+    │   ├── preprocessing.py
+    │   ├── features.py
+    │   ├── modeling.py
+    │   └── evaluation.py
+    │
+    ├── slides/                 # Slide deck PDF & source
+    │   ├── Capstone_Final_Presentation.pdf
+    │
+    ├── outputs/                # Model artifacts & figures
+    │   ├── models/
+    │   └── figures/
+    │
+    └── tests/                  # (Optional) unit tests for src/
+
+---
+
+## Project Flow  
+
+    Raw Data Ingestion  →  Data Cleaning  
+    Data Cleaning       →  Feature Engineering  
+    Feature Engineering →  Exploratory Data Analysis  
+    EDA                 →  Baseline Modeling  
+    Baseline Modeling   →  Advanced Modeling & Optimization  
+    Advanced Modeling   →  Model Evaluation & Interpretation
+    Evaluation          →  Deployment & Reporting  
+
+1. **Raw Data Ingestion** – load source files and validate schema.  
+2. **Data Cleaning** – handle missing values, remove duplicates, standardize formats.  
+3. **Feature Engineering** – create new variables, encode categoricals, scale numerics.  
+4. **Exploratory Data Analysis** – generate summary statistics and key visualizations (e.g. histograms, boxplots, scatterplots).  
+5. **Baseline Modeling** – simple models (e.g., linear regression, logistic regression, decision tree, ARIMA) to set performance benchmarks.  
+6. **Advanced Modeling & Optimization** – hyperparameter tuning, ensembles, or complex architectures (e.g. Random Forests, SARIMAX, Simple Neural Networks, LSTM, CNN, XGBoost etc.).  
+7. **Model Evaluation & Interpretation** – compare metrics (e.g. MSE, MAE, Accuracy), confusion matrix, plot ROC / precision‑recall.  
+8. **Deployment & Reporting**
+
+---
+
 #### Repository 
 
 * `data` 
@@ -82,9 +164,19 @@
 * `LICENSE`
     - Project license
 
+---
+
+## License  
+This project is licensed under the **MIT License** – see `LICENSE` for details.
+
 #### Dataset
 
-TBA
+- **Source:** Wheel of Fortune Compendium
+- **Raw File:** Located under `data/raw/` 
+
+| File name | Description |
+|-----------|-------------|
+| `data/obtained/wheeldata.csv` | full dataset scraped |
 
 ### Credits & References
 
