@@ -1,6 +1,6 @@
 # don't upload data files
 *.csv
-data/
+data/unused
 
 # Jupyter Notebook
 .ipynb_checkpoints
